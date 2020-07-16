@@ -91,7 +91,13 @@ public static void main(String[] args) {
 		JOptionPane.showMessageDialog(null, "Not so great of a choice. Eating nothing isn't good for your body.");
 		JOptionPane.showMessageDialog(null, "Since you have to eat something, what are you doing?");
 		String secondLunch = JOptionPane.showInputDialog("1: steal some of your friends lunches. 2: buy a smoothie from school");
-		//if ()
+		if (secondLunch.equals("1")) {
+			JOptionPane.showMessageDialog(null, "Funny choice, stealing food from your friends");
+			JOptionPane.showMessageDialog(null, "Luckily, your friends didn't care and let you eat some of their lunch");
+		}
+		else if (secondLunch.equals("2")) {
+			JOptionPane.showMessageDialog(null, "Good idea, smoothies are very tasty and healthy");
+		}
 	}
 }
 }
